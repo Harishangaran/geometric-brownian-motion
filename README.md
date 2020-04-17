@@ -36,7 +36,7 @@ Calling the class:
         tuple of forecasted stock prices and x axis values for plotting.
     
     
-#GBM parameters
+# GBM parameters
 
  So    :   initial stock price
  
@@ -56,7 +56,7 @@ Calling the class:
  
  W     :   array for brownian path
  
- #Sample Output
+ # Sample Output
  ![GBM Plot](/Sample_output3.png)
  
 
