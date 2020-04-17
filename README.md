@@ -24,7 +24,7 @@ Calling the class:
 # Call eg:
     gbm('AMZN',history_period='100d',forecast_period=252,seed=10)
 
-    # Output
+    Output
         matplotlib plot of the forecasted price and the actual stock price
         movement over history period.
 
@@ -32,20 +32,32 @@ Calling the class:
         stockPriceVals = gbm('AMZN',history_period='100d',
                         forecast_period=252,seed=10).geometricBrownianMotion()
 
-    # Output
+        Output
         tuple of forecasted stock prices and x axis values for plotting.
     
     
-GBM parameters
+#GBM parameters
 
-# So    :   initial stock price
-# dt    :   time increment - daily in this case
-# T     :   length of the prediction time horizon(how many time points to predict, same unit with dt(days))
-# N     :   number of time points in the prediction time horizon -> T/dt
-# t     :   array for time points in the prediction time horizon [1, 2, 3, .. , N]
-# mu    :   mean of historical daily returns (drift coefficient)
-# sigma :   standard deviation of historical daily returns (diffusion coefficient)
-# b     :   array for brownian increments
-# W     :   array for brownian path
+ So    :   initial stock price
+ 
+ dt    :   time increment - daily in this case
+ 
+ T     :   length of the prediction time horizon(how many time points to predict, same unit with dt(days))
+ 
+ N     :   number of time points in the prediction time horizon -> T/dt
+ 
+ t     :   array for time points in the prediction time horizon [1, 2, 3, .. , N]
+ 
+ mu    :   mean of historical daily returns (drift coefficient)
+ 
+ sigma :   standard deviation of historical daily returns (diffusion coefficient)
+ 
+ b     :   array for brownian increments
+ 
+ W     :   array for brownian path
+ 
+ #Sample Output
+ ![GBM Plot](/Sample_output3.png)
+ 
 
 You are welcome to use this code. Any contribution to improve this model is appreciated.
